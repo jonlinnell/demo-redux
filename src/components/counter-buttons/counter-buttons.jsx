@@ -1,4 +1,6 @@
 import React from 'react';
+import { useDispatch } from 'react-redux';
+import counterSlice from '../../store/slices/counter';
 
 import styles from './counter-buttons.module.scss';
 
@@ -15,10 +17,12 @@ function Button({ handleClick, children }) {
 }
 
 function CounterButtons() {
+  const dispatch = useDispatch();
+
   return (
     <div className={styles.buttonGroup}>
-      <Button>+</Button>
-      <Button>-</Button>
+      <Button handleClick={() => dispatch(counterSlice.actions.increment())}>+</Button>
+      <Button handleClick={() => dispatch(counterSlice.actions.decrement())}>-</Button>
     </div>
   );
 }
