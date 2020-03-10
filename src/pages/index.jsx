@@ -1,14 +1,25 @@
 import React from 'react';
 
+import NumericCounter from '../components/numeric-counter';
+import CounterButtons from '../components/counter-buttons';
+
 import styles from './index.module.scss';
 
-const Index = () => {
+function Index() {
   return (
     <div className={styles.index}>
-      <h1>Hello I am a test</h1>
-      <p>ya ya ya I am test ya ya ya ayyy lmao</p>
+      <h1>Demo Page</h1>
+      <p>Hello Meetup!</p>
+
+      <div className={styles.row} style={{ margin: '4rem 0' }}>
+        <NumericCounter count={3} />
+      </div>
+
+      <div className={styles.row}>
+        <CounterButtons />
+      </div>
     </div>
   );
-};
+}
 
 export default Index;

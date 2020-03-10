@@ -1,0 +1,14 @@
+@import "../../styles/includes.scss";
+
+.button {
+  border: 1px solid $brand-secondary;
+  border-radius: $border-radius;
+  background-color: $brand-primary;
+  outline: 0;
+
+  padding: 1.5rem;
+
+  &:active {
+    background-color: darken($color: $brand-primary, $amount: 30);
+  }
+}

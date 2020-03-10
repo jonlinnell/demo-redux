@@ -1,0 +1,36 @@
+@import "../../styles/includes.scss";
+
+.input-group {
+  :first-child {
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+
+    margin-right: 0;
+  }
+  :last-child {
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+
+    margin-left: 0;
+  }
+}
+.input {
+  border: 1px solid $brand-secondary;
+  border-radius: $border-radius;
+  background-color: $brand-primary;
+
+  padding: 1.5rem;
+  font-size: 1.5rem;
+
+  text-align: center;
+
+  max-width: 6rem;
+}
+.selectButton {
+  @extend .input;
+  outline: 0;
+
+  &:active {
+    background-color: darken($color: $brand-primary, $amount: 30);
+  }
+}
