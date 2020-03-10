@@ -6,6 +6,16 @@
   align-items: center;
   justify-content: center;
 }
+.counters {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  & > * {
+    margin: 1rem 0;
+  }
+}
 .row {
   display: flex;
   flex-direction: row;
