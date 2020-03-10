@@ -10,7 +10,7 @@ function EmojiSelector() {
   }
 
   return (
-    <div className={styles['input-group']}>
+    <div className={styles.inputGroup}>
       <input
         value={value}
         type="input"

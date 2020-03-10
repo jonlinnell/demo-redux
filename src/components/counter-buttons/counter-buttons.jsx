@@ -16,7 +16,7 @@ function Button({ handleClick, children }) {
 
 function CounterButtons() {
   return (
-    <div>
+    <div className={styles.buttonGroup}>
       <Button>+</Button>
       <Button>-</Button>
     </div>
