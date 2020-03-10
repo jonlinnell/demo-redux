@@ -8,10 +8,9 @@ import styles from './index.module.scss';
 function Index() {
   return (
     <div className={styles.index}>
-      <h1>Demo Page</h1>
-      <p>Hello Meetup!</p>
+      <h1>Demo O&apos;Clock</h1>
 
-      <div className={styles.row} style={{ margin: '4rem 0' }}>
+      <div className={styles.counters} style={{ margin: '4rem 0' }}>
         <NumericCounter count={3} />
       </div>
 

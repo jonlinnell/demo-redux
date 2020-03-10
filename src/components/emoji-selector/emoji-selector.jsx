@@ -10,20 +10,12 @@ function EmojiSelector() {
   }
 
   return (
-    <div className={styles.inputGroup}>
-      <input
-        value={value}
-        type="input"
-        className={styles.input}
-        onChange={handleChange}
-      />
-      <button
-        type="button"
-        className={styles.selectButton}
-      >
-        OK
-      </button>
-    </div>
+    <input
+      value={value}
+      type="input"
+      className={styles.input}
+      onChange={handleChange}
+    />
   );
 }
 
