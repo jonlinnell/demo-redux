@@ -1,9 +1,15 @@
-html {
-  font-size: 14pt;
+@import "./includes.scss";
 
+html {
   box-sizing: border-box;
+  
+  background-color: $brand-primary;
+  font-family: "Nunito Sans", Arial, Helvetica, sans-serif;
+  font-size: 14pt;
 }
 
 *, *:before, *:after {
   box-sizing: inherit;
+
+  color: $brand-secondary;
 }
